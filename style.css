@@ -103,5 +103,15 @@ li{
   .card_convocacao{
     height: 32rem;
   }
+}
 
+@media (max-width: 535px){
+  .header{
+  position: absolute;
+  left: 20%;
+  }
+
+  .card_convocacao{
+    margin-top: 10rem;
+}
 }
