@@ -13,7 +13,7 @@ body, html{
 
 .header {
     display: flex;
-    margin: 0, 0.75rem;
+    margin: 0.75rem;
     width: 100%;
     height: 7rem;
     align-items: center;
@@ -21,21 +21,22 @@ body, html{
 }
 
 .logo{
-  display: inline;
+  /*display: inline;*/
   margin-left: 2.75rem;
   width: 6,25rem;
   height: 6.35rem;
 }
 
 h1{
-  display: inline;
+  display: flex;
   font-family: Robot, sans-serif;
   font-size: 2.5rem;
   color: #f4d400;
   font-weight: bold;
   position: absolute;
-  left: 34.5%;
-  transform: translateX (-34.5%)
+  left: calc(50% - 114px);
+  transform: translateX (-50%);
+  top: 3.5rem;
 }
 
 main{
@@ -49,7 +50,7 @@ main{
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: min-content auto; 
   margin: 2.75rem 0.2rem 0 0.2rem;
-  height: 32rem;
+  height: 31rem;
   border: 1px solid #002776;
   border-radius: 0.5rem;
 }
