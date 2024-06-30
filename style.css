@@ -35,7 +35,7 @@ h1{
   color: #f4d400;
   font-weight: bold;
   position: absolute;
-  left: calc(50% - 120.4px);
+  left: calc(50% - 128px);
   transform: translateX (-50%);
   top: 3.5rem;
 }
@@ -49,15 +49,94 @@ main{
 }
 
 .card_convocacao{
-  background-color: #f4d400;
+  background-color: #efd843;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: min-content auto; 
   margin: 2.75rem 0.2rem 0.8ren 0.2rem;
   height: 32rem;
-  border: 1px solid #002776;
   border-radius: 0.5rem;
-  padding: 0.4rem 1rem;;
+  padding: 0.4rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.card_convocacao span:first-of-type{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #002776);
+  animation: animar1 2s linear infinite;
+}
+
+@keyframes animar1{
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.card_convocacao span:nth-of-type(2){
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #002776);
+  animation: animar2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animar2{
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.card_convocacao span:nth-of-type(3){
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to left, transparent, #002776);
+  animation: animar3 2s linear infinite;
+}
+
+@keyframes animar3{
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.card_convocacao span:last-of-type{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #002776);
+  animation: animar4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animar4{
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 
 h2{
