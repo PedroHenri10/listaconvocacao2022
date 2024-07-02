@@ -203,4 +203,10 @@ li{
     margin-top: 0.8rem;
   }
 
+  .card_convocacao{
+    margin-top: 2rem;
+    height: 42rem;
+    min-height: 35rem;
+  }
+
 }
